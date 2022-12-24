@@ -15,7 +15,7 @@ const SearchBox = () => {
           inDebounce = setTimeout(async () => {
             const response = await getAutocompleteData(text)
             setAutoComplete(response.data);
-          }, 200);
+          }, 300);
         })();
         // call api
       };
@@ -31,7 +31,7 @@ const SearchBox = () => {
             placeholder='Enter Location'
             onChange={(e) => {
                 text = e.target.value
-                if (text.length >= 3 && text) {
+                if (text.length >= 3) {
                   searchApi(text);
                   
                 }
