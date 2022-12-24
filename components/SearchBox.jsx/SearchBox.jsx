@@ -9,10 +9,9 @@ const SearchBox = () => {
       let text
       let inDebounce;
       const searchApi = async (text) => {
-        console.log(text);
+       
         clearTimeout(inDebounce);
         return (function () {
-          console.log(text);
           inDebounce = setTimeout(async () => {
             const response = await getAutocompleteData(text)
             setAutoComplete(response.data);
