@@ -1,5 +1,4 @@
 import React from 'react'
-import Data from './testdata.json'
 import styles from './Location.module.scss'
 
 const Location = ({data}) => {
@@ -8,7 +7,7 @@ const Location = ({data}) => {
 		
         <div className={styles.locations}>	
 			{
-				Data.results.map((place, index) => {
+				data.results.map((place, index) => {
 					return (
 						
 						<div className={styles.item} key={index}>
