@@ -1,0 +1,230 @@
+{
+    "results": [
+    {
+    "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database License",
+    "url": "https://www.openstreetmap.org/copyright"
+    },
+    "country": "United States",
+    "country_code": "us",
+    "state": "New York",
+    "county": "Onondaga County",
+    "city": "Syracuse",
+    "lon": -76.1474244,
+    "lat": 43.0481221,
+    "state_code": "NY",
+    "formatted": "Syracuse, NY, United States of America",
+    "address_line1": "Syracuse, NY",
+    "address_line2": "United States of America",
+    "category": "administrative",
+    "timezone": {
+    "name": "America/New_York",
+    "offset_STD": "-05:00",
+    "offset_STD_seconds": -18000,
+    "offset_DST": "-04:00",
+    "offset_DST_seconds": -14400,
+    "abbreviation_STD": "EST",
+    "abbreviation_DST": "EDT"
+    },
+    "result_type": "city",
+    "rank": {
+    "importance": 0.5767762857760727,
+    "confidence": 1,
+    "confidence_city_level": 1,
+    "match_type": "full_match"
+    },
+    "place_id": "517a28c0666f0953c05980db6edd28864540f00101f90144ab020000000000c00208",
+    "bbox": {
+    "lon1": -76.204629,
+    "lat1": 42.984165,
+    "lon2": -76.074273,
+    "lat2": 43.086121
+    }
+    },
+    {
+    "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database License",
+    "url": "https://www.openstreetmap.org/copyright"
+    },
+    "name": "Syracuse University",
+    "country": "United States",
+    "country_code": "us",
+    "state": "New York",
+    "county": "Onondaga County",
+    "city": "Syracuse",
+    "postcode": "13210",
+    "district": "Westcott",
+    "street": "Thornden Park Drive",
+    "lon": -76.11855360009726,
+    "lat": 43.017112850000004,
+    "state_code": "NY",
+    "formatted": "Syracuse University, Thornden Park Drive, Syracuse, NY 13210, United States of America",
+    "address_line1": "Syracuse University",
+    "address_line2": "Thornden Park Drive, Syracuse, NY 13210, United States of America",
+    "category": "education.university",
+    "timezone": {
+    "name": "America/New_York",
+    "offset_STD": "-05:00",
+    "offset_STD_seconds": -18000,
+    "offset_DST": "-04:00",
+    "offset_DST_seconds": -14400,
+    "abbreviation_STD": "EST",
+    "abbreviation_DST": "EDT"
+    },
+    "result_type": "amenity",
+    "rank": {
+    "importance": 0.563992465055935,
+    "confidence": 1,
+    "match_type": "full_match"
+    },
+    "place_id": "5169cfd661960753c059b28bfdc030824540f00101f90196ce3c0000000000c00201920313537972616375736520556e6976657273697479",
+    "bbox": {
+    "lon1": -76.1420522,
+    "lat1": 43.0067872,
+    "lon2": -76.1101029,
+    "lat2": 43.0469676
+    }
+    },
+    {
+    "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database License",
+    "url": "https://www.openstreetmap.org/copyright"
+    },
+    "country": "United States",
+    "country_code": "us",
+    "state": "Kansas",
+    "county": "Hamilton County",
+    "city": "Syracuse",
+    "postcode": "67878",
+    "town": "Syracuse",
+    "lon": -101.752671,
+    "lat": 37.9805686,
+    "state_code": "KS",
+    "formatted": "Syracuse, KS 67878, United States of America",
+    "address_line1": "Syracuse, KS 67878",
+    "address_line2": "United States of America",
+    "category": "administrative",
+    "timezone": {
+    "name": "America/Denver",
+    "offset_STD": "-07:00",
+    "offset_STD_seconds": -25200,
+    "offset_DST": "-06:00",
+    "offset_DST_seconds": -21600,
+    "abbreviation_STD": "MST",
+    "abbreviation_DST": "MDT"
+    },
+    "result_type": "postcode",
+    "rank": {
+    "importance": 0.42549450814614714,
+    "confidence": 1,
+    "confidence_city_level": 1,
+    "match_type": "full_match"
+    },
+    "place_id": "517369fcc22b7059c059043e9a4583fd4240f00101f90172fb010000000000c00207",
+    "bbox": {
+    "lon1": -101.816776,
+    "lat1": 37.941272,
+    "lon2": -101.736708,
+    "lat2": 37.990492
+    }
+    },
+    {
+    "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database License",
+    "url": "https://www.openstreetmap.org/copyright"
+    },
+    "country": "United States",
+    "country_code": "us",
+    "state": "Nebraska",
+    "county": "Otoe County",
+    "city": "Syracuse",
+    "town": "Syracuse",
+    "lon": -96.186398,
+    "lat": 40.657224,
+    "state_code": "NE",
+    "formatted": "Syracuse, NE, United States of America",
+    "address_line1": "Syracuse, NE",
+    "address_line2": "United States of America",
+    "category": "administrative",
+    "timezone": {
+    "name": "America/Chicago",
+    "offset_STD": "-06:00",
+    "offset_STD_seconds": -21600,
+    "offset_DST": "-05:00",
+    "offset_DST_seconds": -18000,
+    "abbreviation_STD": "CST",
+    "abbreviation_DST": "CDT"
+    },
+    "result_type": "city",
+    "rank": {
+    "importance": 0.35112554102268,
+    "confidence": 1,
+    "confidence_city_level": 1,
+    "match_type": "full_match"
+    },
+    "place_id": "518c82e0f1ed0b58c059ba1281ea1f544440f00101f9016295020000000000c00208",
+    "bbox": {
+    "lon1": -96.197821,
+    "lat1": 40.651206,
+    "lon2": -96.172004,
+    "lat2": 40.672865
+    }
+    },
+    {
+    "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database License",
+    "url": "https://www.openstreetmap.org/copyright"
+    },
+    "name": "Syracuse",
+    "country": "United States",
+    "country_code": "us",
+    "state": "New York",
+    "county": "Onondaga County",
+    "city": "Syracuse",
+    "postcode": "13208",
+    "street": "NBT Bank Parkway",
+    "housenumber": "131",
+    "lon": -76.1694003,
+    "lat": 43.0768312,
+    "state_code": "NY",
+    "formatted": "Syracuse, 131 NBT Bank Parkway, Syracuse, NY 13208, United States of America",
+    "address_line1": "Syracuse",
+    "address_line2": "131 NBT Bank Parkway, Syracuse, NY 13208, United States of America",
+    "timezone": {
+    "name": "America/New_York",
+    "offset_STD": "-05:00",
+    "offset_STD_seconds": -18000,
+    "offset_DST": "-04:00",
+    "offset_DST_seconds": -14400,
+    "abbreviation_STD": "EST",
+    "abbreviation_DST": "EDT"
+    },
+    "result_type": "amenity",
+    "rank": {
+    "importance": 0.31725243536262376,
+    "confidence": 1,
+    "match_type": "full_match"
+    },
+    "place_id": "51b01b5b74d70a53c059fea7d19ad5894540f00103f90163c0ff7301000000c002019203085379726163757365",
+    "bbox": {
+    "lon1": -76.1744003,
+    "lat1": 43.0718312,
+    "lon2": -76.1644003,
+    "lat2": 43.0818312
+    }
+    }
+    ],
+    "query": {
+    "text": "syra"
+    }
+    }

@@ -1,5 +1,9 @@
 @use '../abstracts/vars';
+@use '../abstracts/mixins';
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@
     list-style: none;
     text-decoration: none;
     font: inherit;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -18,4 +23,6 @@ img {
 
 body {
     background-color: white;
+    color: black;
+    font-family: vars.$font_primary;
 }
