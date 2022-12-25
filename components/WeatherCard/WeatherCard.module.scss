@@ -1,0 +1,27 @@
+@use '../../sass/abstracts/vars';
+
+
+.weather_card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 4rem;
+    background-color: rgb(5, 3, 49);
+    transition: transform 0.3s;
+    color: white;
+    
+    h1 {
+        display: block;
+        color: vars.$gold;
+    }
+}
+
+.card_header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 0.8rem;
+}
+
+

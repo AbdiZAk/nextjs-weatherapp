@@ -1,0 +1,14 @@
+@use '../../sass/abstracts/vars';
+@use '../../sass/abstracts/mixins';
+
+
+.location_item {
+
+    cursor: pointer;
+    padding: 0.8rem;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: vars.$brightBlue
+    }
+    
+}

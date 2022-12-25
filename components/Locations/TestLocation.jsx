@@ -1,4 +1,4 @@
-import styles from './Location.module.scss'
+import styles from './Locations.module.scss'
 import axios from 'axios'
 import { Fragment } from 'react'
 import { useState, useEffect} from 'react'

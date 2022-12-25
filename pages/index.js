@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Layout from '../components/Layout'
-import Location from '../components/Location/Location';
-import TestLocation from '../components/Location/TestLocation';
-import SearchBox from '../components/SearchBox.jsx/SearchBox';
 import Container from '../components/Container/Container';
+import Layout from '../components/Layout';
+import SearchBox from '../components/SearchBox.jsx/SearchBox';
 
 export default function HomePage() {
   
@@ -19,8 +17,10 @@ export default function HomePage() {
 			
 				<Container>
 					<SearchBox />
+
 				</Container>
 			</section>
+			
 
 			
 		</Layout>
