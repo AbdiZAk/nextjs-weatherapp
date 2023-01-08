@@ -11,16 +11,11 @@ export default function HomePage() {
 		<Head> 
 		<title>Homepage</title>
 		</Head>
-		
+		<Container>
 			<section>
-			{/* <TestLocation /> */}
-			
-				<Container>
 					<SearchBox />
-
-				</Container>
 			</section>
-			
+		</Container>
 
 			
 		</Layout>

@@ -1,6 +1,17 @@
+@use '../../sass/abstracts/mixins';
+@use '../../sass/abstracts/vars';
+
 .footer {
-    background-color: aqua;
-    color: black;
-    padding: 1rem;
     
+    background-color: vars.$darkBg;
+    color: white;
+    padding: 2rem;
+    
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }

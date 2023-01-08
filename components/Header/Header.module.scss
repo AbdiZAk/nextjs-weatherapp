@@ -1,6 +1,9 @@
+@use '../../sass/abstracts/mixins';
+@use '../../sass/abstracts/vars';
+
 .header {
     width: 100%;
-    background-color: #1a1d26;
+    background-color: vars.$darkBg;
     color: white;
     text-align: center;
     height: 135px;

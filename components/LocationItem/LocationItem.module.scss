@@ -3,7 +3,7 @@
 
 
 .location_item {
-
+    transition: vars.$transition;
     cursor: pointer;
     padding: 0.8rem;
     &:hover {

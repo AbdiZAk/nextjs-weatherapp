@@ -1,0 +1,36 @@
+@use '../../sass/abstracts/vars';
+@use '../../sass/abstracts/mixins';
+
+
+.spining_loader {
+  width: 35px;
+  height: 35px;
+  margin: 0.3rem 0 0 -2.3rem;
+  border: 3px solid vars.$gold;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation: rotation 1s linear infinite;
+}
+.spining_loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: vars.$orange transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

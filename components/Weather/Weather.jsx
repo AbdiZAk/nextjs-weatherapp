@@ -1,42 +1,45 @@
 import { useEffect, useState } from 'react'
 import { getWeatherData } from '../../lib/weather-api'
 import styles from './Weather.module.scss'
-import WeatherCard from '../WeatherCard/WeatherCard'
 import { Fragment } from 'react'
+import WeatherTemplate from './WeatherTemplate'
+import WeatherLoader from '../Loaders/WeatherLoader'
 
 const Weather = ({weatherQuery}) => {
     const {lat, lon, location} = weatherQuery
-    // const [weatherData, setWeatherData] = useState([])
+    const [weatherData, setWeatherData] = useState()
+    const [loading, setLoading] = useState(false);
     
-    const fetchWeatherData = async (lat, lon) => {
-        const data = await getWeatherData(lat, lon)
-        console.log(data)
-        return data
-    }
+    useEffect(() => {
+        const fetchWeatherData = async (lat, lon) => {
+            const response = await getWeatherData(lat, lon)
+            setLoading(false)
+            return setWeatherData(response.data)
+        }
+    
+        if (lat, lon) {
+            setLoading(true)
+            fetchWeatherData(lat, lon)
+            
+        }
+      }, []);
 
-    if (lat, lon) {
-        // const weatherData = fetchWeatherData(lat, lon)
-        console.log()
-    }
     return (
         <Fragment>
-            {/* <h1>{location}</h1> */}
+            <h1>{location}</h1>
+            {loading &&
+                    <WeatherLoader />
+
+            }
             <div className={styles.Weather}>
-                {/* {weatherData && 
-                    console.log(weatherData)
-                    
-                } */}
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>
-                <WeatherCard label={"lable"} data={"data"} icon={"icon"}/>  
                 
+                
+                {weatherData && 
+                    <WeatherTemplate weatherData={weatherData} />
+                    
+                }
+                
+        
             </div>
         </Fragment>
     )

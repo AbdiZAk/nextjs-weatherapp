@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { getAutocompleteData } from '../../lib/autocomplete-api'
-import Container from '../Container/Container'
+import SpiningLoader from '../Loaders/SpiningLoader'
 import Locations from '../Locations/Locations'
 import styles from './SearchBox.module.scss'
 import Input from '../Input/Input'
 
 const SearchBox = () => {
-
-    const [AutoComplete, setAutoComplete] = useState();
+    const [currentInput, setcurrentInput] = useState('')
+    const [AutoCompleteData, setAutoCompleteData] = useState();
+    const [loading, setLoading] = useState(false);
     let inDebounce;
 
     const searchApi = async (text) => {
@@ -15,40 +16,46 @@ const SearchBox = () => {
     return (function () {
         inDebounce = setTimeout(async () => {
         const response = await getAutocompleteData(text)
-        setAutoComplete(response.data);
+        setAutoCompleteData(response.data);
+        setLoading(false);
         }, 200);
     })();
-    // call api
-    };
+    
+    };// call api
 
     return (
-        // <Container>
+        
             <div className={styles.searchBox}>
-                <Input
-                    type="text" 
-                    placeHolder='Enter Location'
-                    handleChange={(e) => {
-                    let text = e.target.value;
-                    
-                    if (text.length >= 3) {
-                        // searchApi(text);
-                    }
-                        
-                    }}
-                />
-               
-                    <Locations
-                       
-                        data={AutoComplete}   
+                <div className={styles.input_loader}>
+                    <Input
+                        type="text" 
+                        placeHolder='Enter Location'
+                        handleChange={(e) => {
+                        let text = e.target.value;
+                        setcurrentInput(text)
+                        if (text.length >= 3) {
+                            searchApi(text);
+                            setLoading(true)
+                            
+                        } 
+                        }}
                     />
+                    {loading ?
+                        <SpiningLoader />
+                    : ''}
+                </div>
+               
+
+                {AutoCompleteData && currentInput?
+                    <Locations data={AutoCompleteData}/>
+                :
                 
-                {/* { AutoComplete && currentInput ? 
-                <Locations data={AutoComplete}/>
-                : 
                 <h1 className={styles.instructions}>Please type an address in the search box above to see weather results.</h1>
-                } */}  
+                }  
+
+                
             </div>
-        // </Container>
+         
     )
 }
 

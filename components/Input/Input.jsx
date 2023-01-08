@@ -10,6 +10,7 @@ const Input = ({type, placeHolder, handleChange}) => {
         className={styles.input_field} 
         onChange={handleChange}
      />
+     
       
     
   )
